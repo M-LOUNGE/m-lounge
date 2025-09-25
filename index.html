@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-LOUNGE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">M-LOUNGE</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#releases">New Releases</a></li>
+        <li><a href="#submit">Submit Film</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Banner -->
+  <section id="home" class="banner">
+    <div class="banner-overlay">
+      <h2>Discover South Africa’s Creative Voices</h2>
+      <p>Explore the latest independent films, stories, and visions.</p>
+    </div>
+  </section>
+
+  <!-- Featured Films -->
+  <section class="featured">
+    <h2>Featured Films</h2>
+    <div class="film-grid">
+      <a href="https://youtu.be/6s4OBlbw3zo?si=C9q1L-umy-shjyq6" target="_blank" class="film-card">
+        <img src="flixpictures/themba.png" alt="Themba poster">
+        <h3>Themba</h3>
+        <p>
+      Director & Writer: Sara Momtazian<br>
+      Producer: Michael Stephanus</p>
+      </a>
+      <a href="https://youtu.be/8gxrZAhAVys?si=gzExkSaZRq_-KMcU" target="_blank" class="film-card">
+        <img src="flixpictures/naledi.png" alt="Naledi Poster">
+        <h3>Naledi's Notebook</h3>
+        <p>Director: Jack Domingo</p>
+      </a>
+      <a href="https://youtu.be/Dhd4efrX-mQ?si=HoNYE4Asl2wCnEp0" target="_blank" class="film-card">
+        <img src="flixpictures/thuli.png" alt="Thuli Poster">
+        <h3>Thuli</h3>
+        <p>Director: Tush Tv</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- New Releases (Approved Films) -->
+  <section id="releases">
+    <h2>New Releases</h2>
+    <div id="release-list" class="film-grid"></div>
+  </section>
+
+  <!-- Submit Film -->
+  <section id="submit">
+    <h2>Submit Your Film</h2>
+    <form id="filmForm">
+      <input type="text" id="title" placeholder="Film Title" required>
+      <input type="text" id="director" placeholder="Director" required>
+      <textarea id="synopsis" placeholder="Synopsis" required></textarea>
+      <input type="text" id="cast" placeholder="Cast & Crew">
+      <input type="text" id="awards" placeholder="Awards (if any)">
+      <input type="url" id="link" placeholder="Film Link (YouTube/Vimeo)" required>
+      <input type="url" id="poster" placeholder="Poster Image URL" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 M-LOUNGE. All Rights Reserved. Designed by Mpumelelo Hlongwane </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
